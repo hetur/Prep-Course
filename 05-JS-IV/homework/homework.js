@@ -6,13 +6,13 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-     var obj = {
+     let obj = {
       nombre: nombre,
       edad: edad, 
       meow: function meow() {
         return "Meow!";
       }
-  }
+  };
   return obj;
 }
 
@@ -40,7 +40,6 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 return objetoMisterioso.numeroMisterioso * 5;
-//return objetoMisterioso;
 
 }
 
@@ -154,7 +153,10 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto.calcularPrecioDescuento = function(){
+    return this.precio - (this.precio * this.porcentajeDeDescuento)
+  };
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
@@ -175,4 +177,4 @@ module.exports = {
   pasarUsuarioAPremium,
   sumarLikesDeUsuario,
   agregarMetodoCalculoDescuento
-}
+};

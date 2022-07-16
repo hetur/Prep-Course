@@ -13,7 +13,7 @@ const {
   agregarAmigo,
   pasarUsuarioAPremium,
   sumarLikesDeUsuario,
-  agregarMetodoCalculoDescuento
+  agregarMetodoCalculoDescuento,
 } = require('../homework').default;
 
 describe('crearGato(nombre, edad)', function() {

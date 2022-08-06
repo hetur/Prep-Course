@@ -14,7 +14,7 @@ const {
   pasarUsuarioAPremium,
   sumarLikesDeUsuario,
   agregarMetodoCalculoDescuento,
-} = require('../homework').default;
+} = require('../homework');
 
 describe('crearGato(nombre, edad)', function() {
   it('should create a new cat with the nombre and edad properties set', function() {
